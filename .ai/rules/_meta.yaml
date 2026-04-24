@@ -1,0 +1,9 @@
+workspace:
+  description: "GROWIT 전체 워크스페이스 시스템 명세서 — 아키텍처, 위임 패턴, 서비스 구조"
+  cursor:
+    alwaysApply: true
+
+delegation-matrix:
+  description: "크로스 레포 위임 단일 소스 — repo 포함 조건, 의존 순서, 단계별 위임 대상, 컨텍스트 주입, 브랜치/산출물 규칙"
+  cursor:
+    alwaysApply: true

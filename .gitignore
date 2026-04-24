@@ -1,0 +1,18 @@
+# Orchestration artifacts (per TICKET context)
+.orchestrate/
+
+# Research / Plan artifacts
+.research/
+.plan/
+
+# Wiki raw sources (immutable originals)
+.wiki-sources/
+
+# IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Environment
+.env
+.env.local

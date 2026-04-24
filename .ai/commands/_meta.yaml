@@ -1,0 +1,71 @@
+settings:
+  description: "초기 워크스페이스 세팅 — GitHub Token, Figma MCP, Notion MCP 연결 + 레포 클론 + Cursor 워크스페이스 구성"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+research:
+  description: "크로스 레포 리서치 오케스트레이션 (BE→FE→APP 순서 위임)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+plan:
+  description: "리서치 결과 기반 크로스 레포 구현 계획 수립 (BE→FE→APP 의존성 조정)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+implement:
+  description: "구현 계획 기반 크로스 레포 구현 실행 (BE→FE→APP 순서 위임 & 정합성 검증)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+pr:
+  description: "크로스 레포 PR 생성 & 집계 (Related PRs 상호 참조)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+orchestrate:
+  description: "풀스택 구현 오케스트레이션 (BE→FE→APP → 리뷰→테스트→PR)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+deploy-dev:
+  description: "PR을 main에 머지하여 DEV 환경에 배포 (의존성 순서: BE→FE→APP)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+deploy-prod:
+  description: "릴리스 태그 생성으로 PROD 환경에 배포 (pre-flight check → 태그 → 모니터링)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+review:
+  description: "품질 게이트 기반 코드 리뷰 (파일 변경량, 도메인 단일성)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+deploy-local:
+  description: "로컬 개발 서버 전체 기동 (BE + FE, hot-reload)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash
+    context: fork
+
+wiki:
+  description: "프로젝트 지식 축적 & 관리 — learn(교훈 추출), ingest(소스 학습), query(질의), lint(건강성 검사), status(현황)"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
+main:
+  description: "모든 repo를 main 브랜치로 체크아웃 & pull하여 최신화"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash
+    context: fork

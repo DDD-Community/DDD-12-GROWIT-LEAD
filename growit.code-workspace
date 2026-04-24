@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../DDD-12-GROWIT-FE"
+		},
+		{
+			"path": "../DDD-12-GROWIT-BE"
+		},
+		{
+			"path": "../DDD-12-GROWIT-APP"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"notebook.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
