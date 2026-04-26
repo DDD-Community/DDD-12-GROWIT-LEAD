@@ -6,7 +6,7 @@
 
 | # | 레포 | 경로 |
 |---|------|------|
-| 1 | growit-lead | `~/Desktop/growit/growit-lead` |
+| 1 | DDD-12-GROWIT-LEAD | `~/Desktop/growit/DDD-12-GROWIT-LEAD` |
 | 2 | DDD-12-GROWIT-BE | `~/Desktop/growit/DDD-12-GROWIT-BE` |
 | 3 | DDD-12-GROWIT-FE | `~/Desktop/growit/DDD-12-GROWIT-FE` |
 | 4 | DDD-12-GROWIT-APP | `~/Desktop/growit/DDD-12-GROWIT-APP` |
@@ -58,7 +58,7 @@ cd <repo-path> && git checkout main && git pull origin main
 
 | 레포 | 상태 | 비고 |
 |------|------|------|
-| growit-lead | ✅ Updated | abc1234 ← latest commit msg |
+| DDD-12-GROWIT-LEAD | ✅ Updated | abc1234 ← latest commit msg |
 | DDD-12-GROWIT-BE | ✅ Updated | def5678 ← latest commit msg |
 | DDD-12-GROWIT-FE | ⏭️ Skipped | uncommitted changes 존재 |
 | DDD-12-GROWIT-APP | ✅ Updated | ghi9012 ← latest commit msg |

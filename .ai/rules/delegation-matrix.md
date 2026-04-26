@@ -112,7 +112,7 @@ test -f {repo_path}/.ai/commands/{command}.md || \
 
 | 산출물 | 경로 | 커밋 여부 |
 |--------|------|----------|
-| 오케스트레이션 컨텍스트 | `growit-lead/.orchestrate/{TICKET_ID}/context.json` | **커밋 금지** |
+| 오케스트레이션 컨텍스트 | `DDD-12-GROWIT-LEAD/.orchestrate/{TICKET_ID}/context.json` | **커밋 금지** |
 | 각 repo 리서치 | `{repo}/.research/{TICKET_ID}/research.md` | 커밋 금지 |
 | 각 repo 계획 | `{repo}/.plan/{TICKET_ID}/plan.md` | 커밋 금지 |
 

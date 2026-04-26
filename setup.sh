@@ -30,7 +30,7 @@ WORKSPACE_FILE="$BASE_DIR/growit.code-workspace"
 if [ ! -f "$WORKSPACE_FILE" ]; then
   echo ""
   echo "→ Creating growit.code-workspace..."
-  cp "$BASE_DIR/growit-lead/growit.code-workspace" "$WORKSPACE_FILE"
+  cp "$BASE_DIR/DDD-12-GROWIT-LEAD/growit.code-workspace" "$WORKSPACE_FILE"
   echo "✓ Workspace file created"
 else
   echo ""

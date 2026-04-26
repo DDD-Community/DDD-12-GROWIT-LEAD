@@ -1,8 +1,8 @@
-# CLAUDE.md — growit-lead (Orchestrator)
+# CLAUDE.md — DDD-12-GROWIT-LEAD (Orchestrator)
 
 ## 역할
 
-growit-lead는 **오케스트레이터**입니다. 코드를 직접 작성하지 않고, 크로스 레포 작업을 조율합니다.
+DDD-12-GROWIT-LEAD는 **오케스트레이터**입니다. 코드를 직접 작성하지 않고, 크로스 레포 작업을 조율합니다.
 
 - 개발 파이프라인 실행 (research → plan → implement → review → pr → deploy)
 - 배포 조율 (DEV/PROD)
@@ -14,7 +14,7 @@ growit-lead는 **오케스트레이터**입니다. 코드를 직접 작성하지
 
 ```
 growit/
-├── growit-lead/              ← 이 repo. 오케스트레이터
+├── DDD-12-GROWIT-LEAD/              ← 이 repo. 오케스트레이터
 ├── DDD-12-GROWIT-FE/         ← FE: 프론트엔드 (Web)
 ├── DDD-12-GROWIT-BE/         ← BE: 백엔드
 └── DDD-12-GROWIT-APP/        ← APP: React Native 앱
@@ -106,6 +106,7 @@ BE → FE → APP
 | DDD-12-GROWIT-FE | `DDD-Community/DDD-12-GROWIT-FE` |
 | DDD-12-GROWIT-BE | `DDD-Community/DDD-12-GROWIT-BE` |
 | DDD-12-GROWIT-APP | `DDD-Community/DDD-12-GROWIT-APP` |
+| DDD-12-GROWIT-LEAD | `DDD-Community/DDD-12-GROWIT-LEAD` |
 
 ---
 

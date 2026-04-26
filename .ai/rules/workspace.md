@@ -2,13 +2,13 @@
 
 ## SSOT 원칙
 
-각 프로젝트는 자기 도메인 커맨드/규칙만 소유하고, `growit-lead`가 오케스트레이터 역할을 합니다.
+각 프로젝트는 자기 도메인 커맨드/규칙만 소유하고, `DDD-12-GROWIT-LEAD`가 오케스트레이터 역할을 합니다.
 
 ### 프로젝트별 책임
 
 | 프로젝트 | `.ai/` 범위 | 소유 커맨드 |
 |---------|------------|-----------|
-| `growit-lead` | 워크스페이스 오케스트레이션 | `/settings`, `/orchestrate`, `/research`, `/plan`, `/implement`, `/review`, `/pr`, `/deploy-dev`, `/deploy-prod` |
+| `DDD-12-GROWIT-LEAD` | 워크스페이스 오케스트레이션 | `/settings`, `/orchestrate`, `/research`, `/plan`, `/implement`, `/review`, `/pr`, `/deploy-dev`, `/deploy-prod` |
 | `DDD-12-GROWIT-BE` | BE 구현 관련 | `/research`, `/plan`, `/implement`, `/debug`, `/pr` |
 | `DDD-12-GROWIT-FE` | FE 구현 관련 | `/research`, `/plan`, `/implement`, `/debug`, `/pr` |
 | `DDD-12-GROWIT-APP` | APP 구현 관련 | `/research`, `/plan`, `/implement`, `/debug`, `/pr` |
@@ -25,7 +25,7 @@
 
 ### 위임 패턴
 
-`growit-lead`의 커맨드는 직접 구현하지 않고 **각 프로젝트 커맨드를 순서대로 위임**합니다.
+`DDD-12-GROWIT-LEAD`의 커맨드는 직접 구현하지 않고 **각 프로젝트 커맨드를 순서대로 위임**합니다.
 
 ```
 /orchestrate TICKET_ID

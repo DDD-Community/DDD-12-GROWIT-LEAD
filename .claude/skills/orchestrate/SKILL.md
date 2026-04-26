@@ -40,7 +40,7 @@ Modify:   현재→변경 + 영향 분석 → 수정 → 리뷰
 
 ### 0-3. 컨텍스트 번들 저장
 
-**저장 경로**: `growit-lead/.orchestrate/{TICKET_ID}/context.json`
+**저장 경로**: `DDD-12-GROWIT-LEAD/.orchestrate/{TICKET_ID}/context.json`
 
 ```typescript
 interface OrchestrationContext {

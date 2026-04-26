@@ -194,7 +194,7 @@ def sync_cursor_rules() -> None:
 def main() -> None:
     print()
     print("=========================================")
-    print("  growit-lead AI Command SSOT Sync")
+    print("  DDD-12-GROWIT-LEAD AI Command SSOT Sync")
     print("  .ai/ → .cursor/ + .claude/skills/")
     print("=========================================")
     print()

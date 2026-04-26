@@ -7,7 +7,7 @@ allowed-tools: Read, Grep, Glob, Bash, Write, Edit
 # Settings
 
 초기 워크스페이스 세팅을 자동화합니다.
-**비개발자도** `growit-lead`를 클론하고 `/settings`만 입력하면 모든 개발 환경이 구성됩니다.
+**비개발자도** `DDD-12-GROWIT-LEAD`를 클론하고 `/settings`만 입력하면 모든 개발 환경이 구성됩니다.
 
 ## 세팅 흐름
 
@@ -332,7 +332,7 @@ print('✅ Notion MCP 등록 완료' if 'notion' in d.get('mcpServers', {}) else
 
 ### 4-1. 레포 클론
 
-growit-lead의 부모 디렉토리(`~/Desktop/growit/`)에 3개 레포를 클론한다:
+DDD-12-GROWIT-LEAD의 부모 디렉토리(`~/Desktop/growit/`)에 3개 레포를 클론한다:
 
 ```bash
 BASE_DIR="$(cd "$(pwd)/.." && pwd)"

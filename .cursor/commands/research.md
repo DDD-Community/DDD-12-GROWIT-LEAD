@@ -1,7 +1,7 @@
 # Research
 
 티켓 기반으로 **영향 repo에 `/research`를 위임**합니다.
-growit-lead의 `/research`는 크로스 레포 오케스트레이터이며, 실제 코드 분석은 각 repo에 위임합니다.
+DDD-12-GROWIT-LEAD의 `/research`는 크로스 레포 오케스트레이터이며, 실제 코드 분석은 각 repo에 위임합니다.
 
 > **위임 순서·대상·컨텍스트는 `rules/delegation-matrix.md`(SSOT)를 따른다.**
 
@@ -34,7 +34,7 @@ Step 5: 결과 집계
 
 ## Step 1: 컨텍스트 로드
 
-`growit-lead/.orchestrate/{TICKET_ID}/context.json`을 읽는다.
+`DDD-12-GROWIT-LEAD/.orchestrate/{TICKET_ID}/context.json`을 읽는다.
 파일이 없으면 `/orchestrate {TICKET_ID}` Phase 0만 수행.
 
 ---
