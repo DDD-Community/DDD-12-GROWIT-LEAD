@@ -58,8 +58,14 @@ deploy-local:
     allowed-tools: Read, Grep, Glob, Bash
     context: fork
 
+draft:
+  description: "Meeting-to-Develop: Notion 티켓의 미팅 노트/요구사항을 자동 분석하여 개발 초안 작성 & Notion 페이지에 반영"
+  claude:
+    allowed-tools: Read, Grep, Glob, Bash, Write, Edit
+    context: fork
+
 wiki:
-  description: "프로젝트 지식 축적 & 관리 — learn(교훈 추출), ingest(소스 학습), query(질의), lint(건강성 검사), status(현황)"
+  description: "프로젝트 지식 축적 & 관리 — learn(교훈 추출), ingest(소스 학습), query(질의), lint(건강성 ��사), status(현황)"
   claude:
     allowed-tools: Read, Grep, Glob, Bash, Write, Edit
     context: fork

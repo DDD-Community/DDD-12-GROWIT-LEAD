@@ -1,6 +1,6 @@
 ---
 name: wiki
-description: 프로젝트 지식 축적 & 관리 — learn(교훈 추출), ingest(소스 학습), query(질의), lint(건강성 검사), status(현황)
+description: 프로젝트 지식 축적 & 관리 — learn(교훈 추출), ingest(소스 학습), query(질의), lint(건강성 ��사), status(현황)
 context: fork
 allowed-tools: Read, Grep, Glob, Bash, Write, Edit
 ---

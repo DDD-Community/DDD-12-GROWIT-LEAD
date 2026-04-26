@@ -1,9 +1,10 @@
 # Orchestration artifacts (per TICKET context)
 .orchestrate/
 
-# Research / Plan artifacts
+# Research / Plan / Draft artifacts
 .research/
 .plan/
+.draft/
 
 # Wiki raw sources (immutable originals)
 .wiki-sources/
@@ -16,3 +17,6 @@
 # Environment
 .env
 .env.local
+
+# MCP config (contains API keys)
+.mcp.json
