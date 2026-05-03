@@ -158,7 +158,10 @@ print('✅ config.json 검증 완료')
 ```bash
 GH_TOKEN=$(python3 -c "import json; print(json.load(open('$CONFIG'))['github']['token'])")
 
-# 기존 인증 상태와 무관하게 토큰으로 재인증
+# GH_TOKEN 환경변수 설정 (git clone 등에 사용)
+export GH_TOKEN
+
+# gh CLI에도 토큰 등록 (PR 생성, issue 관리 등에 필수)
 echo "$GH_TOKEN" | gh auth login --with-token 2>/dev/null
 
 # 검증
@@ -195,14 +198,32 @@ done
 ORG=$(python3 -c "import json; print(json.load(open('$CONFIG'))['github']['org'])")
 REPOS=$(python3 -c "import json; print(' '.join(json.load(open('$CONFIG'))['github']['repos']))")
 
+## 레포별 기본 브랜치
+
+`config.json`의 `github.default_branches`에서 레포별 기본 브랜치를 읽는다.
+
+| Repo | 기본 브랜치 |
+|------|-----------|
+| DDD-12-GROWIT-BE | `main` |
+| DDD-12-GROWIT-FE | `develop` |
+| DDD-12-GROWIT-APP | `main` |
+
+```bash
+# 기본 브랜치 조회 함수
+get_default_branch() {
+  python3 -c "import json; print(json.load(open('$CONFIG')).get('github',{}).get('default_branches',{}).get('$1','main'))"
+}
+
 for repo in $REPOS; do
   TARGET="$BASE_DIR/$repo"
+  DEFAULT_BRANCH=$(get_default_branch "$repo")
   if [ -d "$TARGET" ]; then
-    echo "✓ $repo — 이미 존재, main pull"
-    (cd "$TARGET" && git checkout main 2>/dev/null && git pull origin main 2>/dev/null)
+    echo "✓ $repo — 이미 존재, $DEFAULT_BRANCH pull"
+    (cd "$TARGET" && git checkout "$DEFAULT_BRANCH" 2>/dev/null && git pull origin "$DEFAULT_BRANCH" 2>/dev/null)
   else
     echo "→ $repo 클론 중..."
     git clone "https://github.com/$ORG/$repo.git" "$TARGET"
+    (cd "$TARGET" && git checkout "$DEFAULT_BRANCH" 2>/dev/null) || true
   fi
 done
 ```

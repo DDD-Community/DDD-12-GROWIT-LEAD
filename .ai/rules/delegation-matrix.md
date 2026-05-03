@@ -6,11 +6,11 @@
 
 ## 1. Repo 경로 매핑
 
-| Repo Key | 로컬 경로 | GitHub | 역할 |
-|---------|----------|--------|------|
-| `be` | `~/Desktop/growit/DDD-12-GROWIT-BE` | `DDD-Community/DDD-12-GROWIT-BE` | 백엔드 API |
-| `fe` | `~/Desktop/growit/DDD-12-GROWIT-FE` | `DDD-Community/DDD-12-GROWIT-FE` | 웹 프론트엔드 |
-| `app` | `~/Desktop/growit/DDD-12-GROWIT-APP` | `DDD-Community/DDD-12-GROWIT-APP` | React Native 앱 |
+| Repo Key | 로컬 경로 | GitHub | 기본 브랜치 | 역할 |
+|---------|----------|--------|-----------|------|
+| `be` | `~/Desktop/growit/DDD-12-GROWIT-BE` | `DDD-Community/DDD-12-GROWIT-BE` | `main` | 백엔드 API |
+| `fe` | `~/Desktop/growit/DDD-12-GROWIT-FE` | `DDD-Community/DDD-12-GROWIT-FE` | `develop` | 웹 프론트엔드 |
+| `app` | `~/Desktop/growit/DDD-12-GROWIT-APP` | `DDD-Community/DDD-12-GROWIT-APP` | `main` | React Native 앱 |
 
 ---
 
@@ -105,6 +105,8 @@ test -f {repo_path}/.ai/commands/{command}.md || \
 | modify | `modify` |
 
 - 모든 repo에서 **동일한 브랜치명**을 사용한다.
+- 브랜치는 각 repo의 **기본 브랜치**(§1 참조)에서 생성한다.
+- PR도 각 repo의 **기본 브랜치**를 대상으로 생성한다.
 
 ---
 

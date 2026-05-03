@@ -188,7 +188,11 @@ for tunnel in ssh_config.get('tunnels', []):
 
 ---
 
-## Step 3: 포트 충돌 검사
+## Step 3: 포트 충돌 검사 (필수)
+
+> **규칙: 서비스 기동 전 반드시 해당 포트의 기존 프로세스를 kill 한 후 기동한다.**
+> 이를 생략하면 Next.js 등이 자동으로 다른 포트(3002 등)를 선택하여 포트가 변경되는 문제가 발생한다.
+> 포트는 항상 고정이다: BE=8080, FE=3000, APP=8081, Tunnel=5433.
 
 ```bash
 PORTS=(8080 3000 8081)
@@ -201,6 +205,7 @@ for i in "${!PORTS[@]}"; do
   if [ -n "$PID" ]; then
     echo "⚠️ $NAME 포트 $PORT 사용 중 (PID: $PID) — 종료합니다"
     kill -9 $PID 2>/dev/null
+    sleep 1  # 포트 해제 대기
   fi
 done
 ```
