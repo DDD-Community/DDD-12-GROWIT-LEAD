@@ -20,3 +20,6 @@
 
 # MCP config (contains API keys)
 .mcp.json
+
+# Figma screenshots
+.figma-screenshots/
