@@ -8,7 +8,7 @@
 
 | Repo Key | 로컬 경로 | GitHub | 기본 브랜치 | 역할 |
 |---------|----------|--------|-----------|------|
-| `be` | `~/Desktop/growit/DDD-12-GROWIT-BE` | `DDD-Community/DDD-12-GROWIT-BE` | `main` | 백엔드 API |
+| `be` | `~/Desktop/growit/DDD-12-GROWIT-BE` | `DDD-Community/DDD-12-GROWIT-BE` | `develop` | 백엔드 API |
 | `fe` | `~/Desktop/growit/DDD-12-GROWIT-FE` | `DDD-Community/DDD-12-GROWIT-FE` | `develop` | 웹 프론트엔드 |
 | `app` | `~/Desktop/growit/DDD-12-GROWIT-APP` | `DDD-Community/DDD-12-GROWIT-APP` | `main` | React Native 앱 |
 
